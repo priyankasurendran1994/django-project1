@@ -1,7 +1,7 @@
-from django.urls import path
-from . import views
+from django.urls import url
+from .views import viewsa
 
 urlpatterns = [
-    path('',views.home,name="home"),
-    path('groupData',views.groupData,name="groupData")
+    url(r'^aaa$', views, name='view_a'),
+    
 ]
